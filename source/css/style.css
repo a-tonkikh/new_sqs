@@ -338,6 +338,7 @@ body {
   padding: 0;
 }
 .main-nav__logo {
+  display: block;
   height: 47px;
   margin: 0;
   padding: 0;
