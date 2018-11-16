@@ -1,2 +1,1 @@
-сборка npm run build
-# new_sqs
+idea for sqs token landing page
