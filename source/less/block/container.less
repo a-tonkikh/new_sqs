@@ -1,0 +1,88 @@
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 950px;
+
+  &--footer {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+  }
+
+  &--partners {
+    position: relative;
+
+    &::before {
+      background-image: url("../img/girl.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      bottom: -45px;
+      content: "";
+      height: 378px;
+      left: 25px;
+      position: absolute;
+      width: 147px;
+      z-index: 2;
+    }
+
+    &::after {
+      background-image: url("../img/boy.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      bottom: -35px;
+      content: "";
+      height: 372px;
+      position: absolute;
+      right: 25px;
+      width: 126px;
+      z-index: 2;
+    }
+  }
+}
+
+@media (max-width: @tablet-width-max) {
+  .container {
+    padding: 0;
+    width: 750px;
+
+    &--footer {
+      width: 600px;
+    }
+
+    &--partners {
+      &::before {
+        left: 10px;
+      }
+
+      &::after {
+        right: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: @mobile-width-max) {
+  .container {
+    width: 300px;
+
+    &--footer {
+      display: block;
+      width: 300px;
+    }
+
+    &--form {
+      width: 100%;
+    }
+
+    &--partners {
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

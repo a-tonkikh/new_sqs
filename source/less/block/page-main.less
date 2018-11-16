@@ -1,0 +1,53 @@
+.page-main__section {
+  margin: 0;
+  padding: 25px 0 30px;
+  position: relative;
+  width: 100%;
+
+  &--even {
+    color: #102e4a;
+  }
+
+  &--odd {
+    background-color: #102e4a;
+    color: #fff;
+  }
+}
+
+.page-main__title {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding: 0;
+  text-align: center;
+  width: 800px;
+}
+
+.page-main__anchor {
+  opacity: 0;
+  position: absolute;
+  top: -100px;
+}
+
+@media (max-width: @tablet-width-max) {
+  .page-main__title {
+      width: 700px;
+  }
+}
+
+@media (max-width: @mobile-width-max) {
+  .page-main__section {
+    padding: 15px 0 20px;
+  }
+
+  .page-main__title {
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    width: 300px;
+  }
+}
