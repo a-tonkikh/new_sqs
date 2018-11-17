@@ -87,13 +87,14 @@
 }
 
 .main-nav--closed .main-nav__menu:active::before {
-  background-color: lighten(#3c4552, 30%);
-  box-shadow: 0 10px 0 0 lighten(#3c4552, 30%), 0 20px 0 0 lighten(#3c4552, 30%);
+  background-color: #f4ba04;
+  box-shadow: 0 10px 0 0 #f4ba04, 0 20px 0 0 #f4ba04;
 }
 
 .main-nav--closed .main-nav__menu:focus::before {
-  background-color:lighten(#3c4552, 30%);
+  background-color: lighten(#3c4552, 30%);
   box-shadow: 0 10px 0 0 lighten(#3c4552, 30%), 0 20px 0 0 lighten(#3c4552, 30%);
+  outline: none;
 }
 
 .main-nav--closed .main-nav__menu:hover::before {
@@ -130,12 +131,12 @@
 
   &:hover::after,
   &:hover::before {
-    background-color:lighten(#3c4552, 30%);
+    background-color: #f4ba04;
   }
 
   &:focus::after,
   &:focus::before {
-    background-color:lighten(#3c4552, 30%);
+    background-color: lighten(#3c4552, 30%);
     outline: none;
   }
 }
